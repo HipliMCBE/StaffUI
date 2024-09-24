@@ -3,6 +3,7 @@ main: AccurateQS\StaffUI\Main
 version: 1.0.0
 api: 5.0.0
 author: AccurateQS
+depend: [FormAPI]
 
 commands:
   staffui:
