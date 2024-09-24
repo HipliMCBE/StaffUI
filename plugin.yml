@@ -1,0 +1,30 @@
+name: StaffUI
+main: AccurateQS\StaffUI\Main
+version: 1.0.0
+api: 5.0.0
+author: AccurateQS
+
+commands:
+  staffui:
+    description: Ouvre l'interface principale du StaffUI
+    permission: staffui.use
+
+permissions:
+  staffui.use:
+    default: op
+  staffui.ban:
+    default: op
+  staffui.tempban:
+    default: op
+  staffui.unban:
+    default: op
+  staffui.kick:
+    default: op
+  staffui.mute:
+    default: op
+  staffui.tempmute:
+    default: op
+  staffui.unmute:
+    default: op
+  staffui.history:
+    default: op
