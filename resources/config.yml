@@ -1,0 +1,16 @@
+# Configuration du plugin StaffUI
+
+# Préfixe utilisé dans les messages du plugin
+prefix: "&8[&cStaffUI&8] "
+
+# Messages personnalisés
+messages:
+  ban_success: "&aLe joueur {player} a été banni avec succès."
+  unban_success: "&aLe joueur {player} a été débanni avec succès."
+  kick_success: "&aLe joueur {player} a été expulsé avec succès."
+  mute_success: "&aLe joueur {player} a été rendu muet avec succès."
+  unmute_success: "&aLe joueur {player} peut à nouveau parler."
+
+# Paramètres de l'historique
+history:
+  max_entries: 50  # Nombre maximum d'entrées à conserver par joueur/staff
