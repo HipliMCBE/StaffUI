@@ -30,7 +30,7 @@ class ReduceBanForm {
             $reduction = ($days * 86400) + ($hours * 3600) + ($minutes * 60);
 
             if ($this->plugin->getBanManager()->reduceBanTime($targetPlayer, $reduction)) {
-                $player->sendMessage("§a[StaffUI] §fLa durée du ban de §e$targetPlayer §fa été réduite de §6$days §fjours, §6$hours §fheures et §6$minutes §fminutes.");
+                $player->sendMessage("§a[StaffUI] §fLa durée du ban de §e" . $targetPlayer . "§fa été réduite de §6" . $days . " §fjours, §6" . $hours . " §fheures et §6" . $minutes . " §fminutes.");
             } else {
                 $player->sendMessage("§c[StaffUI] §fImpossible de réduire la durée du ban de §e$targetPlayer§f. Il n'est peut-être pas banni ou le ban est permanent.");
             }
