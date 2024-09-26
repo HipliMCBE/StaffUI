@@ -38,7 +38,7 @@ class StaffHistoryForm {
         $history = $this->plugin->getHistoryManager()->getStaffHistory($staffName);
 
         if (empty($history)) {
-            $player->sendMessage("§c[StaffUI] §fAucun historique trouvé pour le staff §e$staffName§f.");
+            $player->sendMessage("§c[StaffUI] §fAucun historique trouvé pour le staff §e" . $staffName . "§f.");
             return;
         }
 
@@ -50,7 +50,7 @@ class StaffHistoryForm {
             }
         });
 
-        $form->setTitle("§bHistorique du staff $staffName");
+        $form->setTitle("§bHistorique du staff " . $staffName);
         $content = "";
         foreach ($history as $entry) {
             $content .= "§6Action: §f{$entry['action']}\n";
