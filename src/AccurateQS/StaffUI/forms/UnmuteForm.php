@@ -25,9 +25,9 @@ class UnmuteForm {
             $targetPlayer = $data[0];
 
             if ($this->plugin->getMuteManager()->unmute($targetPlayer)) {
-                $player->sendMessage("§a[StaffUI] §fLe joueur §e$targetPlayer §fa été démute.");
+                $player->sendMessage("§a[StaffUI] §fLe joueur §e" . $targetPlayer . " §fa été démute.");
             } else {
-                $player->sendMessage("§c[StaffUI] §fImpossible de démuter le joueur §e$targetPlayer§f. Il n'est peut-être pas mute.");
+                $player->sendMessage("§c[StaffUI] §fImpossible de démuter le joueur §e" . $targetPlayer . "§f. Il n'est peut-être pas mute.");
             }
         });
 
