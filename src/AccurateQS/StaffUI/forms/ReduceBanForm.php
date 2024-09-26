@@ -32,7 +32,7 @@ class ReduceBanForm {
             if ($this->plugin->getBanManager()->reduceBanTime($targetPlayer, $reduction)) {
                 $player->sendMessage("§a[StaffUI] §fLa durée du ban de §e" . $targetPlayer . "§f a été réduite de §6" . $days . " §fjours, §6" . $hours . " §fheures et §6" . $minutes . " §fminutes.");
             } else {
-                $player->sendMessage("§c[StaffUI] §fImpossible de réduire la durée du ban de §e$targetPlayer§f. Il n'est peut-être pas banni ou le ban est permanent.");
+                $player->sendMessage("§c[StaffUI] §fImpossible de réduire la durée du ban de §e" . $targetPlayer . "§f. Il n'est peut-être pas banni ou le ban est permanent.");
             }
         });
 
