@@ -28,7 +28,7 @@ class BanForm {
             if ($this->plugin->getBanManager()->ban($targetPlayer, $reason, null, $player->getName())) {
                 $player->sendMessage("§a[StaffUI] §fLe joueur §e$targetPlayer §fa été banni de manière permanente.");
             } else {
-                $player->sendMessage("§c[StaffUI] §fImpossible de bannir le joueur §e$targetPlayer§f.");
+                $player->sendMessage("§c[StaffUI] §fImpossible de bannir le joueur §e{$targetPlayer}§f.");
             }
         });
 
