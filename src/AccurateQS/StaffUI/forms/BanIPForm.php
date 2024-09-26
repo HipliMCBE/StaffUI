@@ -29,12 +29,12 @@ class BanIPForm {
             if ($target instanceof Player) {
                 $ip = $target->getNetworkSession()->getIp();
                 if ($this->plugin->getBanManager()->banIP($targetPlayer, $ip, $reason, $player->getName())) {
-                    $player->sendMessage("§a[StaffUI] §fL'IP du joueur §e$targetPlayer §fa été bannie.");
+                    $player->sendMessage("§a[StaffUI] §fL'IP du joueur §e" . $targetPlayer . "§fa été bannie.");
                 } else {
-                    $player->sendMessage("§c[StaffUI] §fImpossible de bannir l'IP du joueur §e$targetPlayer§f.");
+                    $player->sendMessage("§c[StaffUI] §fImpossible de bannir l'IP du joueur §e" . $targetPlayer . "§f.");
                 }
             } else {
-                $player->sendMessage("§c[StaffUI] §fLe joueur §e$targetPlayer §fn'est pas en ligne.");
+                $player->sendMessage("§c[StaffUI] §fLe joueur §e" . $targetPlayer . "§fn'est pas en ligne.");
             }
         });
 
