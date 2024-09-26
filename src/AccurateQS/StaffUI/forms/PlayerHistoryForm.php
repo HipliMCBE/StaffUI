@@ -39,7 +39,7 @@ class PlayerHistoryForm {
         $stats = $this->plugin->getHistoryManager()->getPlayerStats($targetPlayer);
         $currentSanction = $this->plugin->getHistoryManager()->getCurrentSanction($targetPlayer);
 
-        $form = new SimpleForm(function(Player $player, ?int $data) use ($targetPlayer) {
+        $form = new SimpleForm(function(Player $player, ?int $data) {
             if ($data === null) {
                 $mainForm = new MainForm($this->plugin);
                 $mainForm->openHistoryCategory($player);

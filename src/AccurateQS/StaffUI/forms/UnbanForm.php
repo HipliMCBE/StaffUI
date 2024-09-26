@@ -25,9 +25,9 @@ class UnbanForm {
             $targetPlayer = $data[0];
 
             if ($this->plugin->getBanManager()->unban($targetPlayer)) {
-                $player->sendMessage("§a[StaffUI] §fLe joueur §e$targetPlayer §fa été débanni.");
+                $player->sendMessage("§a[StaffUI] §fLe joueur §e" . $targetPlayer . " §fa été débanni.");
             } else {
-                $player->sendMessage("§c[StaffUI] §fImpossible de débannir le joueur §e$targetPlayer§f. Il n'est peut-être pas banni.");
+                $player->sendMessage("§c[StaffUI] §fImpossible de débannir le joueur §e" . $targetPlayer . "§f. Il n'est peut-être pas banni.");
             }
         });
 

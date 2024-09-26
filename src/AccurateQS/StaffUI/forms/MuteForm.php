@@ -26,9 +26,9 @@ class MuteForm {
             $reason = $data[2];
 
             if ($this->plugin->getMuteManager()->mute($targetPlayer, $reason, null, $player->getName())) {
-                $player->sendMessage("§a[StaffUI] §fLe joueur §e$targetPlayer §fa été rendu muet de manière permanente.");
+                $player->sendMessage("§a[StaffUI] §fLe joueur §e" . $targetPlayer . "§fa été rendu muet de manière permanente.");
             } else {
-                $player->sendMessage("§c[StaffUI] §fImpossible de rendre muet le joueur §e$targetPlayer§f.");
+                $player->sendMessage("§c[StaffUI] §fImpossible de rendre muet le joueur §e" . $targetPlayer . "§f.");
             }
         });
 

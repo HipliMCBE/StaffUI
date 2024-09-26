@@ -30,9 +30,9 @@ class ReduceMuteForm {
             $reduction = ($days * 86400) + ($hours * 3600) + ($minutes * 60);
 
             if ($this->plugin->getMuteManager()->reduceMuteTime($targetPlayer, $reduction)) {
-                $player->sendMessage("§a[StaffUI] §fLa durée du mute de §e$targetPlayer §fa été réduite de §6$days §fjours, §6$hours §fheures et §6$minutes §fminutes.");
+                $player->sendMessage("§a[StaffUI] §fLa durée du mute de §e" . $targetPlayer . " §fa été réduite de §6" . $days . " §fjours, §6" . $hours . " §fheures et §6" . $minutes . " §fminutes.");
             } else {
-                $player->sendMessage("§c[StaffUI] §fImpossible de réduire la durée du mute de §e$targetPlayer§f. Il n'est peut-être pas mute ou le mute est permanent.");
+                $player->sendMessage("§c[StaffUI] §fImpossible de réduire la durée du mute de §e" . $targetPlayer . "§f. Il n'est peut-être pas mute ou le mute est permanent.");
             }
         });
 
