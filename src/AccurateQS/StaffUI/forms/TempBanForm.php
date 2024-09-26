@@ -31,9 +31,9 @@ class TempBanForm {
             $duration = ($days * 86400) + ($hours * 3600) + ($minutes * 60);
 
             if ($this->plugin->getBanManager()->ban($targetPlayer, $reason, $duration, $player->getName())) {
-                $player->sendMessage("§a[StaffUI] §fLe joueur §e$targetPlayer §fa été banni pour §6$days §fjours, §6$hours §fheures et §6$minutes §fminutes.");
+                $player->sendMessage("§a[StaffUI] §fLe joueur §e" . $targetPlayer . " §fa été banni pour §6" . $days . " §fjours, §6" . $hours . " §fheures et §6" . $minutes . " §fminutes.");
             } else {
-                $player->sendMessage("§c[StaffUI] §fImpossible de bannir le joueur §e$targetPlayer§f.");
+                $player->sendMessage("§c[StaffUI] §fImpossible de bannir le joueur §e" . $targetPlayer . "§f.");
             }
         });
 
